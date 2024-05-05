@@ -6,11 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/05a609eff5.js" crossorigin="anonymous"></script>
 
@@ -21,18 +20,18 @@
         <span class="loader"><span class="loader-inner"></span>
     </div>
     <div class="container defaultitembox" id="NavBar" style="z-index: 12;">
-        <nav class="navbar navbar-expand-lg navbarScroll fixed-top" style="opacity: 1;">
+        <nav class="navbar navbar-expand-lg navbarScroll fixed-top deco" style="opacity: 1;transition:ease-in-out .3s;">
             <div class="container defaultitembox" style="background-color:rgba(0, 0, 0, 0);">
-                <a class="navbar-brand" style="color:white;">谦 YC</a> <button class="navbar-toggler" type="button"
+                <a class="navbar-brand navbar-text">谦 YC</a> <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
                         class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"> <a class="nav-link" href="#about" style="color:white;">About</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#project" style="color:white;">Project</a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#footer" style="color:white;">Contact</a> </li>
+                        <li class="nav-item"> <a class="nav-link navbar-text"  href="#about" >About</a> </li>
+                        <li class="nav-item"> <a class="nav-link navbar-text"  href="#project" >Project</a> </li>
+                        <li class="nav-item"> <a class="nav-link navbar-text"  href="#footer" >Contact</a> </li>
                     </ul>
                 </div>
             </div>
@@ -40,75 +39,62 @@
     </div>
     <section id="about" style="height:90vmin;margin-bottom:5%;" class="relative">
         <div class="defaultitembox"
-            style="height:100%;width:auto;background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 10%);">
+            style="height:100%;background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 10%);">
             <div class="defaultbackgroud background1 "></div>
             <div class="defaultbackgroud background2"></div>
             <div class="defaultbackgroud background3"></div>
             <div class="defaultbackgroud background4"></div>
             <div class="row"
-                style="position: relative;z-index: 1;width:auto;height: 100%;overflow: hidden;align-items: center;">
+                style="position: relative;z-index: 1;width:100%;height: 100%;overflow: hidden;align-items: center;">
                 <div class="L-Info col-md-6 col-sm-6 col-lg-6">
                     <div class="img-wrap">
                         <img class="img" src="Images/Og_Pht.jpeg"
                             style="object-fit:fill;object-position:center;border-radius: 50%;overflow: hidden;align-self: center;">
                     </div>
-                    <p class="fontstyle1 typingstyle" style='text-align: center;'>Hi, I am YC!</p>
+                    <p class="fontstyle1 typingstyle responsive-text"style="text-align:center;font-size: 5vmin;" >Hi, I am YC!</p>
                 </div>
                 <div class="R-Info col-md-6 col-sm-6 col-lg-6">
-                    <h2 style="text-align:center;color: yellowgreen;font-size: 5vmin;">About Me</h2>
+                    <h2 style="text-align:center;color:#00BFFF;font-size: 5vmin;">About Me</h2>
                     <br>
-                    <p class="fontstyle1" style='text-align: left;'>System developer who specializing  in developing
+                    <p class="fontstyle1 responsive-text" style="text-align:center;display: flex;">System developer who specializing in developing
                         front-end and back-end subsystems, dashboards, and data-driven models. </p>
                 </div>
             </div>
         </div>
+        <div class="down-arrow"></div>
     </section>
-    <div class="down-arrow"></div>
+ 
     <div>
     <section id="project">
-        <div class="container" style="min-height:100vmin;padding-top: 10vh;">
-            <h1 class="text-center text-white" >Projects</h1>
+        <div style="min-height:90vmin;padding:10vh 10vw 0 10vw">
+            <h1 class="text-center" style="color:#00BFFF;font-size: 5vmin;">Projects</h1>
             <div class="row card-group">
-                    <div class="card card-deg">
-                        <div class="card-body body-border card-item" style="background-color:rgb(41, 41, 41);color: gainsboro;">
-                              <div style="height:25%;width: 100%;"   >
-                            <img src="Images/Proj1.PNG"
-                                    style="object-fit:cover;object-position:center;max-height:100%;max-width:100%;align-self:center;margin: auto;display: block;">
-                              </div>
-                            <div style="width: 100%;height: 10px;border-bottom: white solid 1px;"></div>
-                            <h4 class="card-title mt-3" style="font-size: 4vmin;"><span> <i class='fa fa-address-card' style="font-size: 4vmin;"></i></span> Portfolio</h4>
-                            <p class="card-text mt-3" style="font-size: 3vmin;">Website for personal
-                                intrest to record my projects. Created with <span style="font-weight: bolder;">HTML,
-                                    CSS</span> and <span style="font-weight: bolder;">Javascript</span>, ease with the
-                                use of <span style="font-weight: bolder;">Bootstrap 5.0</span>.Improving......
-                            </p>
-                        </div>
-                    </div>               
-                    <div class="card card-deg">
-                        <div class="card-body body-border" style="background-color:rgb(41, 41, 41);color: gainsboro;">
-                            <div style="height:25%;width: 100%;"   >
-                            <img src="Images/MiniGame.PNG"
-                                style="object-fit:cover;object-position:center;max-height: 100%;max-width:100%;align-self: center;margin: auto;display: block;">
-                            </div>
-                            <div style="width: 100%;height: 10px;border-bottom: white solid 1px;"></div>
-
-                            <h4 class="card-title mt-3" style="font-size: 4vmin;"><span> <i class='fa fa-gamepad' style="font-size: 4vmin;"></i></span> MiniGame</h4>
-                            <p class="card-text mt-3" style="font-size: 3vmin;">Developing a mini game
-                                using <span style="font-weight: bolder;">Python</span>.Generating Random number of item
-                                around the Board.Player goal is to find all item within the limited step!</p>
-                        </div>
-                    </div>                     
-                    <div class="card card-deg">
-                        <div class="card-body body-border" style="background-color:rgb(41, 41, 41);color: gainsboro;">
-                             <div style="height:25%;width: 100%;"   >
-                            <img src="Images/ComingSoon.jpg"
-                                 style="object-fit:cover;object-position:center;max-height: 100%;max-width:100%;align-self: center;margin: auto;display: block;">
-                              </div>
-                            <div style="width: 100%;height: 10px;border-bottom: white solid 1px;"></div>
-                            <h4 class="card-title mt-3" style="font-size: 3.5vmin;"><span> <i class='fa fa-lightbulb-o' style="font-size: 4vmin;"></i></span> Up-coming Project</h4>
-                            <p class="card-text mt-3 loading"
-                                style="font-size: 4vmin;;text-align: center;">Generating Project</p>
-                        </div>
+                <div class="card card-deg" style="min-width:10vmin;">
+                      <img class="card-img-top border-dark" src="Images/Proj1.PNG" alt="Image Portfolio" style="height:40%;object-fit: cover;"/>
+                    <div class="card-body body-border card-item" style="background-color:rgb(41, 41, 41);color: gainsboro;">
+                       
+                        
+                        <h4 class="card-title mt-3 responsive-text"><span><i class='fa fa-address-card' style="color:#00bfff"></i></span> Portfolio <span><a class="github" href="https://github.com/ChienYC/PortFolio"><i class="fa-brands fa-github"></i></a></span></h4>
+                        <p class="card-text mt-3 responsive-text h-50">My personal interest website, designed to catalogue my projects, is undergoing enhancements.</p>
+                        <div class="card-footer bg-transparent border-info responsive-text-sm"><span style="font-weight: bolder;">HTML,CSS,Javascript</span></div>
+                    </div>
+                </div>               
+                <div class="card card-deg" style="min-width:10vmin;">
+                    <img class="card-img-top border-dark" src="Images/MiniGame.PNG" alt="Image MiniGame" style="height:40%;object-fit: cover;"/>
+                    <div class="card-body body-border" style="background-color:rgb(41, 41, 41);color: gainsboro;">
+                         <h4 class="card-title mt-3 responsive-text"><span> <i class='fa fa-gamepad' style="color:#00BFFF"></i></span> MiniGame <span><a class="github" href="https://github.com/ChienYC/MiniGame"><i class="fa-brands fa-github"></i></a></span></h4>
+                        <p class="card-text mt-3 h-50 responsive-text" >A mini game that generating random number of item
+                            around the Board.Player Goal,find all item within the limited step!</p>
+                            <div class="card-footer bg-transparent border-info responsive-text-sm"><span style="font-weight: bolder;">Python,Numpy
+                            </span></div>
+                    </div>
+                </div>                     
+                <div class="card card-deg" style="min-width:10vmin;">
+                    <img class="card-img-top border-dark" src="Images/ComingSoon.jpg" alt="Image ComingSoon" style="height:40%;object-fit: cover;"/>
+                    <div class="card-body body-border" style="background-color:rgb(41, 41, 41);color: gainsboro;">
+                         <h4 class="card-title mt-3 responsive-text"><span>  <i class='fa fa-lightbulb-o responsive-text' style="color:#00BFFF"></i></span> Up-coming Project</h4>
+                        <p class="card-text mt-3 loading responsive-text"
+                            style="text-align: center;">Generating Project</p>
                     </div>
 
             </div>
@@ -117,11 +103,11 @@
 </div>
     <div>
         <section id="footer">
-                <div class="container" style="height:60vmin;margin-top:10vh;">
-                    <div class="container site-footer" style="margin:auto;border-radius: 5px;height:70%;">
+                <div style="margin-top:10vh;">
+                    <div class="site-footer" style="margin:auto;border-radius: 5px;height:70%;">
                         <div class="container" style="height:80%;">
                             <div class="row" style="height:inherit;">
-                                <div class="col-sm-12 col-md-12 TextPosition" style="text-align: center;">
+                                <div class="col-sm-12 col-md-12 TextPosition my-5" style="text-align: center;">
                                     <p class="text-justify h2 quote" id="lblquote"></p>
                                 </div>
                                 <div class="p-2 bd-highlight">
@@ -138,7 +124,7 @@
                         </div>
                         <div class="container">
                             <div style=" text-align: center;">
-                                <div class="p-2 bd-highlight">
+                                <div class="p-2 bd-highlight" STYLE="color: gainsboro;">
                                     <p>Copyright &#169 2024, Designed by ChienYC</p>
                                 </div>
                             </div>
