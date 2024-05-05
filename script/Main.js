@@ -34,3 +34,38 @@ window.addEventListener("load",()=>{
     displayQuote();   
 });
 
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+const header_item=document.querySelectorAll(".navbar-text");
+
+window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.style.background = 'rgba(0, 0, 0, 0.5)';
+        header.style.boxShadow = '0 5px 20px 0 rgba(0, 191, 255, 0.2),0 5px 20px 0 rgba(255,255,255,0.1)';
+        header.style.backdropFilter = 'blur(11px)';
+        header.style.webkitBackdropFilter = 'blur(11px)';
+        header.style.borderRadius = '10px';
+        header.style.border = '1px solid rgba(255, 255, 255, 0.18)';
+        
+        // for (let i = 0; i <header_item.length; i++) {
+        //     header_item[i].style.color="White";
+          
+        //   }
+       
+    }
+    else {
+        header.style.backgroundColor ='rgba(53,69,76, 0)';
+        header.style.boxShadow = '0 8px 32px 0 rgba(31, 38, 135, 0)';
+        header.style.backdropFilter = 'blur(0px)';
+        header.style.webkitBackdropFilter = 'blur(0px)';
+        header.style.borderRadius = '0px';
+        header.style.border = '0px';
+        // for (let i = 0; i <header_item.length; i++) {
+        //     header_item[i].style.color="Black";
+           
+        //   }
+    }
+}
+
+        
